@@ -3,9 +3,7 @@ import java.util.Scanner;
 
 public class Lesson20 {
     public static void main(String[] args) {
-        Human2 human1 = new Human2();
-        human1.getInfo();
-        System.out.println(Human2.ID);
+       Human2.getID();
     }
 }
 
@@ -13,7 +11,9 @@ class Human2 {
     private String name;
     private int age;
     public static int ID = 14;
-    
+    public static void getID(){
+        System.out.println(ID);
+    }
 
     public Human2(){
         System.out.println("Object created ");
